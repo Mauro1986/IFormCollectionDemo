@@ -1,0 +1,17 @@
+﻿<h1>Submit Data:</h1>
+@{
+    <h1>
+        @ViewBag.FirstName
+        @ViewBag.LastName
+        @ViewBag.Age
+    </h1>
+}
+
+<form asp-action="index" asp-controller="Home" method="post">
+
+    <input type="text" id="txtFirstName " name="txtFirstName"/>
+    <input type="text" id="txtLastName " name="txtLastName"/>
+    <input type="text" id="txtAge " name="txtAge"/>
+    <input type="submit" value="Submit" asp-action="index" asp-controller="Home" />
+
+</form>
